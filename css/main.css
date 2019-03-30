@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.banner {
+    width: 100%;;
+    height: calc(100vh - 3px);
+    background-image: url("./../img/cover.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner::after {
+    content: "  ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.banner-text{
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #fff;
+    font-size: 3em;
+    width: 100%;
+    height: calc(100vh - 3px);
+    line-height: calc(100vh - 3px);
+    text-align: center;
+}
+
+.block{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 500px;
+    padding: 5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.block>.image{
+    text-align: center;
+    width: 100%;
+}
+.image>img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;;
+    margin: auto;   
+}
+.text-block>h2{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.text-block>p{
+    font-size: 24px;
+    text-align: justify;
+}
